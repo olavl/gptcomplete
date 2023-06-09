@@ -8,4 +8,4 @@ Download and open in a browser.
 You need to provide your own API key. Runs client side only. Code is kept at an absolute minimum to promote transparancy.
 
 
-
+![screenshot](https://github.com/olavl/gptcomplete/assets/9636547/6268243b-e45a-41fc-9a76-e2f3202d3244)
