@@ -111,15 +111,15 @@
       }
 
       document.getElementById('spinner').style.display = 'block';
-	  document.getElementById('textInput').disabled = true;
+      document.getElementById('textInput').disabled = true;
 	  
       var apiKey = document.getElementById('apiKey').value;
-	  var model = document.getElementById('model').value;
+      var model = document.getElementById('model').value;
       var maxLength = document.getElementById('maxLength').value;
       var temperature = document.getElementById('temperature').value;
       var frequencyPenalty = document.getElementById('frequencyPenalty').value;
       var presencePenalty = document.getElementById('presencePenalty').value;
-	  var keywords = "Here are some keywords to guide to auto-complete: "+document.getElementById('keywords').value+".";
+      var keywords = "Here are some keywords to guide to auto-complete: "+document.getElementById('keywords').value+".";
       var prompt = document.getElementById('textInput').value;
 
       axios.post('https://api.openai.com/v1/chat/completions', {
@@ -145,7 +145,7 @@
         }
       }).then(function(response) {
         document.getElementById('spinner').style.display = 'none';
-		document.getElementById('textInput').disabled = false;
+	document.getElementById('textInput').disabled = false;
         var message = response.data['choices'][0]['message']['content'];
 
         try {
@@ -176,7 +176,7 @@
         }
       }).catch(function(error) {
         document.getElementById('spinner').style.display = 'none';
-		document.getElementById('textInput').disabled = false;
+	document.getElementById('textInput').disabled = false;
         console.error(error);
       });
     }
